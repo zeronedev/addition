@@ -4,10 +4,12 @@ const question = document.querySelector(".js-question");
 const answer = document.querySelector(".js-answer");
 
 let correctAnswer;
+let number1;
+let number2;
 
 function newQuestion() {
-  const number1 = Math.ceil(Math.random() * 9);
-  const number2 = Math.ceil(Math.random() * 9);
+  number1 = Math.ceil(Math.random() * 9);
+  number2 = Math.ceil(Math.random() * 9);
   correctAnswer = number1 + number2;
   question.textContent = number1 + " + " + number2 + " = ? ";
 }
